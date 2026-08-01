@@ -214,9 +214,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   overflow-y: auto;
-  padding: 60px 0 100px;
+  padding: 30px 15px 60px;
   box-sizing: border-box;
 }
 
@@ -254,4 +254,69 @@ body {
 .reset button:hover {
   background-color: #d9534f;
   color: #fff;
+}
+
+/* mobile view */
+@media (max-width: 480px) {
+  #envelope {
+    width: 220px;
+    height: 140px;
+  }
+
+  .flap {
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 64px solid transparent;
+    border-top: 77px solid #d9534f;
+  }
+
+  .pocket {
+    border-left: 110px solid #f5a3a2;
+    border-right: 110px solid #f5a3a2;
+    border-bottom: 70px solid #ff6f61;
+    border-top: 70px solid transparent;
+  }
+
+  .letter-display {
+    width: 90vw;
+    max-width: 260px;
+  }
+
+  .letter-content {
+    padding: 18px 14px;
+  }
+
+  .letter-content p {
+    font-size: 0.95rem;
+  }
+
+  .letter-content .signature {
+    font-size: 0.7rem;
+  }
+
+  .hearts {
+    top: 65px;
+  }
+
+  .heart:before,
+  .heart:after {
+    width: 35px;
+    height: 56px;
+    left: 35px;
+  }
+
+  .heart:after {
+    left: 0;
+  }
+
+  .reset button {
+    min-width: 100px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .bg-heart {
+    width: 12px;
+    height: 12px;
+  }
 }
